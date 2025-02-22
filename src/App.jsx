@@ -8,7 +8,6 @@ import Footer from "./components/Landingpage/Footer";
 import LandingPage from "./screens/LandingPage";
 import Products from "./screens/Products";
 import Contact from "./screens/Contact";
-
 import About from "./screens/About";
 
 function App() {
@@ -16,10 +15,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="about" element={<About />} />
-        <Route exact path="/products" element={<Products />} />
-        <Route exact path="/contact" element={<Contact />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
@@ -27,3 +26,4 @@ function App() {
 }
 
 export default App;
+
