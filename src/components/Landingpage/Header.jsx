@@ -1,10 +1,9 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
 import { Menu, X } from "lucide-react";
-import { useLocation } from "react-router-dom"; // Import useLocation for active link
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Get the current route
 
   const navLinks = [
     { link: "/", name: "Home" },
@@ -27,15 +26,17 @@ function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-7">
           {navLinks.map((navLink, i) => (
-            <a
-              href={navLink.link}
-              className={`text-gray-600 hover:text-black transition ${
-                location.pathname === navLink.link ? "text-black font-semibold border-b-2 border-black pb-1" : ""
-              }`}
+            <NavLink
+              to={navLink.link}
               key={i}
+              className={({ isActive }) =>
+                `text-gray-600 hover:text-black transition ${
+                  isActive ? "text-black font-semibold border-b-2 border-black pb-1" : ""
+                }`
+              }
             >
               {navLink.name}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
@@ -57,14 +58,17 @@ function Header() {
           <ul className="flex flex-col gap-4 p-6">
             {navLinks.map((navLink, i) => (
               <li key={i}>
-                <a
-                  href={navLink.link}
-                  className={`text-gray-700 hover:text-black transition block ${
-                    location.pathname === navLink.link ? "text-black font-semibold border-l-4 border-black pl-2" : ""
-                  }`}
+                <NavLink
+                  to={navLink.link}
+                  onClick={() => setIsOpen(false)} // Close menu on click
+                  className={({ isActive }) =>
+                    `text-gray-700 hover:text-black transition block ${
+                      isActive ? "text-black font-semibold border-l-4 border-black pl-2" : ""
+                    }`
+                  }
                 >
                   {navLink.name}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
