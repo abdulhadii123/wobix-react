@@ -76,10 +76,10 @@ const SingleDetails = () => {
 
       {/* Buttons */}
       <div className="mt-6 flex flex-col md:flex-row gap-4">
-        <button className="w-full md:w-40 py-3 bg-black text-white rounded-md">
+        <button className="w-full md:w-40 py-3 bg-black text-white rounded-md cursor-pointer">
           Buy now
         </button>
-        <button className="w-full md:w-40 py-3 border border-black rounded-md">
+        <button className="w-full md:w-40 py-3 border border-black rounded-md cursor-pointer">
           Add to cart
         </button>
       </div>

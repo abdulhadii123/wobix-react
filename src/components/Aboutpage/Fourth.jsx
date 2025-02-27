@@ -4,7 +4,7 @@ import React from "react";
 
 function Fourth() {
   return (
-    <div className="w-full pl-4 md:pl-16 pt-[60px]">
+    <div className="w-full pl-4 md:pl-16 pt-[60px] animate-fadeIn">
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Left Section */}
         <div className="w-full sm:w-[90%] md:w-[49%]">

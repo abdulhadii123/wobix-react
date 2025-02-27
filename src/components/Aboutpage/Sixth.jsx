@@ -4,7 +4,7 @@ import React from "react";
 
 function Sixth() {
   return (
-    <section className="relative w-full flex items-center justify-center text-center bg-cover bg-no-repeat mt-20 min-h-screen 
+    <section className="relative w-full flex items-center justify-center text-center bg-cover bg-no-repeat mt-20 min-h-screen animate-fadeIn
                         backdrop-brightness-50 bg-[url('/images/4bottles.jpeg')]">
       
       {/* Content */}

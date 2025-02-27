@@ -37,6 +37,7 @@ function SliderComponent() {
   
 
   return (
+    
     <div className="w-full max-w-4xl mx-auto mt-10">
       <h2 className="text-2xl font-semibold text-center mb-6">Featured Products</h2>
       <Slider {...settings}>

@@ -4,7 +4,7 @@ import React from "react";
 
 function Fifth() {
   return (
-    <div className="w-full  pt-[60px] wrapper">
+    <div className="w-full  pt-[60px] wrapper animate-fadeIn">
       <h3 className="text-center mb-[28px] text-[32px] sm:text-[40px] md:text-[48px] font-semibold">
         Why Choose Us?
       </h3>

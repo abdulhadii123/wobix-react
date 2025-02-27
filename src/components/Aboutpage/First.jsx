@@ -4,7 +4,7 @@ import React from "react";
 
 function First() {
   return (
-    <div className="wrapper px-4 md:px-10 lg:px-16 xl:px-20 py-10">
+    <div className="wrapper px-4 md:px-10 lg:px-16 xl:px-20 py-10 animate-fadeIn">
       <div className="container flex flex-col md:flex-row justify-between items-center gap-10">
         {/* Left Section */}
         <div className="left flex flex-col w-full md:w-[49%] text-center md:text-left">

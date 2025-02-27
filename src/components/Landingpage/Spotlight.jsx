@@ -1,7 +1,9 @@
 import React from "react";
 
+
 function Spotlight() {
   return (
+
     <div className="bg-[whitesmoke]">
       <div className="wrapper bg-[url('/images/sp.jpg')] bg-cover bg-center w-full rounded-2xl flex flex-col justify-between min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
         
@@ -23,6 +25,7 @@ function Spotlight() {
 
       </div>
     </div>
+
   );
 }
 

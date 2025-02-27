@@ -2,6 +2,7 @@ import React from "react";
 
 function AboutUsSection() {
   return (
+
     <div className="bg-[whitesmoke] py-10">
       <div className="wrapper">
         
@@ -38,6 +39,7 @@ function AboutUsSection() {
 
       </div>
     </div>
+
   );
 }
 

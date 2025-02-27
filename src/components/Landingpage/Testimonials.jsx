@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 function Testimonials() {
   const sliderRef = useRef(null);
   const settings = {
@@ -59,6 +60,7 @@ function Testimonials() {
   ];
 
   return (
+
     <div className="bg-[whitesmoke]">
       <div className="wrapper">
         {/* Header Section */}
@@ -86,7 +88,7 @@ function Testimonials() {
                 className=" px-3"
               >
                 {""}
-                <div className=" bg-white p-10 rounded-lg">
+                <div className=" bg-white p-10 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl">
                 <p className="text-gray-700 mb-4">{testimonial.text}</p>
                 <div className="flex items-center gap-4">
                   <div className="image w-[40px]">
@@ -154,6 +156,7 @@ function Testimonials() {
         </div>
       </div>
     </div>
+
   );
 }
 

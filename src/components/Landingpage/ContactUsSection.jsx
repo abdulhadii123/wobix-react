@@ -3,6 +3,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
+
 function ContactUsSection() {
   const ContactUs = [
     {
@@ -71,6 +72,7 @@ function ContactUsSection() {
   });
 
   return (
+
     <div className="bg-[whitesmoke] pb-[80px] pt-[70px]">
       <div className="wrapper grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
@@ -156,6 +158,7 @@ function ContactUsSection() {
         </div>
       </div>
     </div>
+
   );
 }
 

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
+
 function ProductSection() {
   const sliderRef = useRef(null);
     const navigate =useNavigate()
@@ -71,6 +72,7 @@ function ProductSection() {
   ];
 
   return (
+
     <div className="bg-white py-10 relative">
       <div className="wrapper">
         {/* Top Section */}
@@ -166,6 +168,7 @@ function ProductSection() {
         </div>
       </div>
     </div>
+
   );
 }
 export default ProductSection;
