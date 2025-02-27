@@ -1,10 +1,11 @@
 /** @format */
+
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
-function ProductSection() {
+const RelatedProducts = () => {
   const sliderRef = useRef(null);
     const navigate =useNavigate()
   const settings = {
@@ -40,29 +41,28 @@ function ProductSection() {
 
   const ProductList = [
     {
-      id:'1',
+        id:'1',
       name: "Eco Sip Bottle",
       capacity: "750ML",
       price: "$120",
       image: "/images/blkbtl.png",
     },
     {
-      id:'2',
+        id:'2',
       name: "Eco Sip Bottle",
       capacity: "750ML",
       price: "$120",
       image: "/images/multibtl.png",
     },
     {
-      id:'3',
-      
+        id:'3',
       name: "Eco Sip Bottle",
       capacity: "750ML",
       price: "$120",
       image: "/images/pinkbtl.png",
     },
     {
-      id:'4',
+        id:'4',
       name: "Eco Sip Bottle",
       capacity: "750ML",
       price: "$120",
@@ -71,26 +71,13 @@ function ProductSection() {
   ];
 
   return (
-    <div className="bg-white py-10 relative">
+    <div className="bg-[whitesmoke] py-[40px]">
       <div className="wrapper">
-        {/* Top Section */}
-        <div className="top flex flex-col md:flex-row justify-between items-start md:items-center">
-          <div className="left mb-6 md:mb-0 md:w-[20%]">
-            <h4 className="text-gray-500 text-[20px]">Products</h4>
-            <p className="text-[#0F6143] text-l w-[56%]">
-              Sustainability Without Compromise
-            </p>
-          </div>
-          <div className="right md:w-[80%]">
-            <h2 className="text-2xl md:text-4xl lg:text-[60px]">
-              Discover the Perfect Bottle for Every Occasion
-            </h2>
-          </div>
-        </div>
-
-        {/* Product Slider */}
+      <div className="top">
+        <h2 className="text-[48px]">Related Products</h2>
+      </div>
         <div className="relative">
-          <Slider ref={sliderRef} {...settings} className="mt-10">
+          <Slider ref={sliderRef} {...settings} className="">
             {ProductList.map((product, index) => (
               <div key={index} className="px-3">
                 {" "}
@@ -167,5 +154,6 @@ function ProductSection() {
       </div>
     </div>
   );
-}
-export default ProductSection;
+};
+
+export default RelatedProducts;

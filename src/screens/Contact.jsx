@@ -70,16 +70,16 @@ function Contact() {
   });
   return (
     <div className="bg-[whitesmoke] md:px-20">
-      <div className="wrapper flex flex-col md:flex-row items-center md:items-start gap-10">
-        <div className="left flex justify-center items-center w-full md:w-1/2">
-          <div className="image relative w-[80%]">
+      <div className="wrapper flex flex-col md:flex-row items-center justify-between md:items-start w-full pt-[20px]">
+        <div className="left flex justify-center items-center w-full md:w-[40%]">
+          <div className="image relative w-full">
             <img
               className="rounded-2xl w-full md:h-[550px] object-cover"
               src="/images/contactimage.jpeg"
               alt="contact-us"
             />
             <div className="socialmedia flex justify-between items-center">
-              <div className="socialmedia-icon flex justify-between absolute right-[20px] bottom-[20px] gap-[8px]">
+              <div className="socialmedia-icon flex justify-between absolute right-[20px] bottom-[20px] gap-[8px] cursor-pointer">
                 <img src="/images/Instagram.png" alt="" />
                 <a
                   href="https://www.instagram.com/yourinstagrampage"
@@ -104,7 +104,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="right w-full md:w-1/2 flex flex-col">
+        <div className="right w-full md:w-[50%] flex flex-col">
           <h1 className="text-4xl md:text-6xl font-bold text-center md:text-center">Contact</h1>
           <p className="text-gray-600 mb-6 text-xl">
           Have questions about our bottles? Contact us—we’re here to help you stay refreshed!
@@ -159,7 +159,7 @@ function Contact() {
                 />
                 <button
                   type="submit"
-                  className="w-full bg-black text-white p-2 rounded-lg hover:bg-gray-800"
+                  className="w-full bg-black text-white p-2 rounded-lg hover:bg-gray-800 cursor-pointer"
                 >
                   Send
                 </button>

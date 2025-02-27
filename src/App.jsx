@@ -7,6 +7,7 @@ import LandingPage from "./screens/LandingPage";
 import Products from "./screens/Products";
 import Contact from "./screens/Contact";
 import About from "./screens/About";
+import ProductDetails from "./screens/ProductDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

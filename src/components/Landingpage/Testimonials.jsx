@@ -111,7 +111,7 @@ function Testimonials() {
           {/* Navigation Arrows */}
           <div className="flex justify-end  gap-4 wrapper">
             <button
-              className="border rounded-full p-3 hover:bg-gray-100 transition mt-10 active:opacity-50"
+              className="border rounded-full p-3 hover:bg-gray-100 transition mt-10 active:opacity-50 cursor-pointer"
               onClick={() => sliderRef.current.slickPrev()}
             >
               <svg
@@ -131,7 +131,7 @@ function Testimonials() {
               </svg>
             </button>
             <button
-              className="border rounded-full p-3 hover:bg-gray-100 transition mt-10 active:opacity-50"
+              className="border rounded-full p-3 hover:bg-gray-100 transition mt-10 active:opacity-50 cursor-pointer"
               onClick={() => sliderRef.current.slickNext()}
             >
               <svg

@@ -20,10 +20,10 @@ function Sixth() {
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="min-w-[120px] bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition border-2 border-white">
+          <button className="min-w-[120px] bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition border-2 border-white cursor-pointer">
             Buy now
           </button>
-          <button className="min-w-[120px] border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition">
+          <button className="min-w-[120px] border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition cursor-pointer">
             Learn more
           </button>
         </div>
